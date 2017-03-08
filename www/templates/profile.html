@@ -1,0 +1,16 @@
+<ion-view view-title="Profile">
+<button id="fab-profile" ng-click="share(itemdetail.login, itemdetail.html_url )" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-android-share-alt"></i></button>
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/profile-bg.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url({{ itemdetail.avatar_url }});"></div>
+                <h3><a class="light">{{itemdetail.login}}</a></h3>
+              
+            </div>
+        </div>
+          
+        <div class="list animate-fade-slide-in-right">
+           <h4>Github profile Url<br/><span><a href="#" ng-click="openLink(itemdetail.html_url)" >{{itemdetail.html_url}}</a></span></h4>
+        </div>
+    </ion-content>
+</ion-view>

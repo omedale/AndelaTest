@@ -1,0 +1,17 @@
+<ion-view view-title="Java Developers">
+    <ion-content  ng-class="{expanded:isExpanded}"   ng-init="initz()">
+        <div ng-repeat="java in developers "  class="item card-item">
+            <div  ng-click="openProfile(java)"  class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url({{ java.avatar_url}});"></span>
+                    <strong  style="    font-size: 30px;">{{java.login}}</strong>
+                    <div class="card-footer text-right">
+                        <i
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> Java Developer
+                        </div>
+                    </div>
+                </div>
+     </div>
+    </ion-content>
+</ion-view>
